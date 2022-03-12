@@ -1,26 +1,32 @@
+/*Whole page */
 *{
    margin: 0;
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
 }
-
+/* Header */
+header{
+   min-height: 10vh;
+}
 header a{
    font-family: 'Lobster Two', cursive;
 }
 
 nav{
-   background-color: rgb(223, 244, 204);
+   display: grid;
+   background-color: rgb(199, 226, 185);
    box-shadow: 4px 7px 5px #888888;
 }
 
 #logo{
+   margin-top: 3.5%;
    margin-left: 5%;
+   grid-column: 1/2;
 }
 
 li{
    text-decoration: none;
    list-style: none;
-   display: inline;
 }
 
 a{
@@ -30,3 +36,40 @@ a{
    font-size: 1.5rem;
    font-weight: medium;
 }
+
+.grid-container-header{
+   display: grid;
+   grid-template-columns: auto; 
+}
+
+ul{
+   display: grid;
+   grid-column: 2/2;
+   align-content: center;
+   justify-content: end;
+   justify-items: center;
+   grid-gap: 10px;
+   margin-right: 5%;
+   margin-top: 3.5%;
+}
+
+/* Main */
+#main-image{
+   min-height: 90vh;
+   background: linear-gradient(rgba(0,0,0,0.4),transparent),url(./images/yoga-ge93a0bab6_1920.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+
+/* Footer */
+
+
+/* Responsive */
