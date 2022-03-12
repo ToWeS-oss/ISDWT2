@@ -1,0 +1,32 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Noto Sans JP', sans-serif;
+}
+
+header a{
+   font-family: 'Lobster Two', cursive;
+}
+
+nav{
+   background-color: #FAFAD2;
+   box-shadow: 4px 7px 5px #888888;
+}
+
+#logo{
+   margin-left: 5%;
+}
+
+li{
+   text-decoration: none;
+   list-style: none;
+   display: inline;
+}
+
+a{
+   color: #71ad68;
+   list-style-type: none;
+   text-decoration: none;
+   font-size: 1.5rem;
+   font-weight: medium;
+}
