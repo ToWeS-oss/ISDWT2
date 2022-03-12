@@ -1,7 +1,7 @@
 *{
    margin: 0;
    box-sizing: border-box;
-   font-family: 'Noto Sans JP', sans-serif;
+   font-family: 'Poppins', sans-serif;
 }
 
 header a{
@@ -9,7 +9,7 @@ header a{
 }
 
 nav{
-   background-color: #FAFAD2;
+   background-color: rgb(223, 244, 204);
    box-shadow: 4px 7px 5px #888888;
 }
 
