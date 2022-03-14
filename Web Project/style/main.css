@@ -58,6 +58,10 @@ header a{
    font-family: 'Lobster Two', cursive;
 }
 
+header a:hover{
+   color: rgba(19, 28, 39, 1);
+}
+
 #nav-header{
    display: grid;
    background-color: rgb(199, 226, 185);
@@ -128,7 +132,55 @@ ul{
 /* Main-info */
 #main-info{
    min-height: 100vh;
+   background-color: black;
 }
+
+.image-right img{
+   width: 55%;
+   height: 969px;
+   float: right;
+}
+
+/* Main-texts*/
+
+.text-left{
+   float: left;
+   color: white;
+   width: 25%;
+   border: 10px solid rgb(199, 226, 185);;
+   border-radius: 20px;
+   padding: 35px;
+   margin-left: 10%;
+   margin-top: 5%;
+   text-align: center;
+}
+
+.text-left h2{
+   font-size: 2rem;
+   margin-bottom: 2%;
+   font-family: 'Lobster Two', cursive;
+}
+
+.text-left2 h2{
+   font-size: 2rem;
+   margin-bottom: 2%;
+   font-family: 'Lobster Two', cursive;
+}
+
+.text-left2{
+   float: left;
+   color: black;
+   width: 25%;
+   border: 10px solid rgb(199, 226, 185);;
+   background-color: rgb(199, 226, 185);;
+   border-radius: 20px;
+   padding: 34px;
+   margin-left: 10%;
+   margin-top: 5%;
+   text-align: center;
+}
+
+
 /* Main-slide */
 #main-slide{
    min-height: 100vh;
