@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>GreenHealth | Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="grid-container-header">
-        <header>
-            <nav id="nav-header">
-                <div id="logo">
-                    <a href="index.html"><img src="./images/logo/LogoMakr-8Vh5YJ.png" alt=""></a> 
-                </div>
-                <ul id="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Gallery.html">Gallery</a></li>
-                    <li><a href="Bmi-site.html">BMI-Calculator</a></li>
-                    <li><a href="Login.html">Login</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+<header id="main-head">
+    <nav>
+        <div id="logo">
+            <a href="index.html"><img src="./images/logo/LogoMakr-8Vh5YJ.png" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./bmi-site.html">BMI Calculator</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
     <footer>
-        <nav>
+        <div class="footer-wrapper">
             <div id="logo">
-                <a href="index.html"><img src="./images/logo/LogoMakr-8Vh5YJ.png" alt=""></a> 
+                <a href="index.html"><img src="./images/logo/LogoMakr-8Vh5YJ.png" alt=""></a>
             </div>
-            <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Bmi-site.html">BMI-Calculator</a></li>
-                <li><a href="Login.html">Login</a></li>
+            <ul>
+                <li>&copy; Green Health</li>
+                <li>K00262280</li>
+                <li>Today is <span id="currentDate"></span> </li>
             </ul>
-        </nav>
-</footer>
+    
+        </div>
+    </footer>
+    <script>
+        var _Date = setInterval(function () {
+            _GetDate();
+        }, 1);
+
+        function _GetDate() {
+            var today = new Date();
+            var date = today.toDateString();
+            var element = document.getElementById('currentDate');
+            element.innerHTML = date;
+        }
+    </script>
 </body>
+
 </html>
